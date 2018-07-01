@@ -21,4 +21,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # google Apikey
-/Apikey.js
+/client/src/Apikey.js
