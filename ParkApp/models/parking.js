@@ -5,7 +5,7 @@ const parkingSchema = new Schema({
   title: { type: String, required: true },
   location: { type: String, required: true },
   synopsis: { type: String },
-  date: { type: Date, default: Date.now },
+  // date: { type: Date, default: Date.now },
   rating: { type: String },
   parkingType: { type: String},
   crossStreet: { type: String},
