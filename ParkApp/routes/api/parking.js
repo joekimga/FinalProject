@@ -1,16 +1,22 @@
+//ParkWhiz API
 const router = require("express").Router();
-const booksController = require("../../controllers/booksController");
+const parkingController = require("../../controllers/parkingController");
 
-// Matches with "/api/books"
+// Matches with "/api/parking"
 router.route("/")
-  .get(booksController.findAll)
-  .post(booksController.create);
+  .get(parkingController.findAll)
+  .post(parkingController.create);
 
-// Matches with "/api/books/:id"
+// Matches with "/api/parking/:id"
 router
   .route("/:id")
-  .get(booksController.findById)
-  .put(booksController.update)
-  .delete(booksController.remove);
+  .get(parkingController.findById)
+  .put(parkingController.update)
+  .delete(parkingController.remove);
 
 module.exports = router;
+
+
+/////////////////////////////
+
+//GoogleMaps API
