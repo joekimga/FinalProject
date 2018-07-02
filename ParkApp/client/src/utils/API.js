@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default {
   // Gets all parking
-  getParking: function() {
+  getParkings: function() {
     return axios.get("/api/parking");
   },
   // Gets the parking with the given id
