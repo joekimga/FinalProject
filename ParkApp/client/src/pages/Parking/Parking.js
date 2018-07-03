@@ -6,13 +6,14 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
-
+import  GoogleMap  from "../../components/MapsComponents"
 class Parking extends Component {
   state = {
     parking: [],
     title: "",
     location: "",
-    synopsis: ""
+    synopsis: "",
+    rating: ""
   };
 
   componentDidMount() {
@@ -165,7 +166,12 @@ class Parking extends Component {
                 ))}
               </List>
             ) : (
+              <div>
               <h3>No Results to Display</h3>
+
+              //api test
+              <GoogleMap/>
+              </div>
             )}
           </Col>
         </Row>
