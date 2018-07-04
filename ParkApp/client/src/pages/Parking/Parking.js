@@ -169,7 +169,7 @@ class Parking extends Component {
               <div>
               <h3>No Results to Display</h3>
 
-              //api test
+              {/*}api test*/}
               <GoogleMap/>
               </div>
             )}
